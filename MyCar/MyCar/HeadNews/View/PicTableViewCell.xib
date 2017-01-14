@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="PicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTc-HP-hbE">
+                        <rect key="frame" x="5" y="5" width="446" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="844-8T-eRB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usk-ho-UO0">
+                        <rect key="frame" x="5" y="154" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9Be-9m-fcb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK4-IY-I8c">
+                        <rect key="frame" x="409" y="154" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GyG-Vf-W2r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gL7-KZ-GBa">
+                        <rect key="frame" x="13" y="31" width="430" height="115"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="gL7-KZ-GBa" secondAttribute="bottom" constant="26" id="1ad-2O-2uY"/>
+                    <constraint firstItem="gL7-KZ-GBa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="2XO-6D-6BU"/>
+                    <constraint firstAttribute="bottom" secondItem="jK4-IY-I8c" secondAttribute="bottom" constant="5" id="Cf4-vv-h8U"/>
+                    <constraint firstItem="Usk-ho-UO0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="EzY-LZ-2Xt"/>
+                    <constraint firstAttribute="bottom" secondItem="Usk-ho-UO0" secondAttribute="bottom" constant="5" id="Goy-UJ-hkb"/>
+                    <constraint firstItem="gL7-KZ-GBa" firstAttribute="top" secondItem="qTc-HP-hbE" secondAttribute="bottom" constant="5" id="KhW-xE-Niy"/>
+                    <constraint firstItem="qTc-HP-hbE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="MUE-Xr-Y62"/>
+                    <constraint firstAttribute="trailing" secondItem="jK4-IY-I8c" secondAttribute="trailing" constant="5" id="Q8j-uv-Ol2"/>
+                    <constraint firstItem="qTc-HP-hbE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="TgJ-7H-Muo"/>
+                    <constraint firstAttribute="trailing" secondItem="qTc-HP-hbE" secondAttribute="trailing" constant="5" id="el2-lR-NEx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gL7-KZ-GBa" secondAttribute="trailing" constant="5" id="giI-L2-uII"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="jK4-IY-I8c" id="Ano-i5-SJt"/>
+                <outlet property="scrollView" destination="gL7-KZ-GBa" id="ffG-Cf-YFm"/>
+                <outlet property="srcLabel" destination="Usk-ho-UO0" id="bU6-z4-YQG"/>
+                <outlet property="titleLabel" destination="qTc-HP-hbE" id="Rk6-TB-YZY"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="163.5"/>
+        </tableViewCell>
+    </objects>
+</document>
